@@ -1,0 +1,6 @@
+<h1>Veja os posts da comunidade!</h1>
+{{#each posts}} {{!-- Aqui é a utilização da variavél no laço de repetição--}}
+    {{>posts}} {{!-- repetindo os valores do array de objetos da variavel 
+    acima através do partial, valores que estão sendo renderizados no arquivo 
+    blog.handlebars que está na pasta views do projeto--}}
+{{/each}}

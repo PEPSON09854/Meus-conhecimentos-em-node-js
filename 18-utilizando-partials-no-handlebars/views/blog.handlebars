@@ -1,0 +1,12 @@
+<h1>Blog</h1>
+
+<h2>Parabéns</h2>
+<p>Você aprendeu a utilizar <b>with</b> para renderizar objetos no handlebars</p>
+
+{{#with post}}
+    <h2>Post</h2>
+    <h3>{{title}}</h3>
+    <p>Categoria: {{category}}</p>
+    <p>Conteúdo: {{body}}</p>
+    <p>Total de comentarios: {{comments}}</p>
+{{/with}}

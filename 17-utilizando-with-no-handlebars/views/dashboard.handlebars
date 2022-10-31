@@ -1,0 +1,14 @@
+<h2>Dashboard</h2>
+
+<h3>Parabéns!</h3>
+<p>Você conseguiu utilizar uma estrutura de repetição no handlebars.</p>
+
+<p><b>Lista de frutas</b></p>
+
+{{#each items}}
+    <ul>
+        <li>{{this}}</li>{{!-- O {this} se refere a cada item da lista de frutas--}}
+    </ul>
+{{/each}}
+
+<a href="/"> Voltar para home</a>

@@ -1,0 +1,18 @@
+{{!-- < os arquivos handlebars que estão na pasta layouts
+não precisam da estrutura do html já que essa estrutura ficará
+como principal no arquivo main.handlebars > --}}
+
+<h1>Parabéns {{user.name}} {{user.surname}}!</h1>
+<p>Você aprendeu a fazer condicional if e else no Handlebars com sucesso.</p>
+
+{{#if approvedAuth}}
+    <h2>Condidional: </h2>
+    <img src="../public/wolves.jpg" alt="">
+    <span>seu cadastro foi realizado com sucesso!</span>
+{{else}}
+    <h2>Não autenticado!</h2><p>faça seu cadastro para usar o sistema.</p>
+{{/if}}
+
+{{#if auth}}
+    <h2>Logado com sucesso! <a href="/dashboard">Ir para dashboard</a></h2>
+{{/if}}
