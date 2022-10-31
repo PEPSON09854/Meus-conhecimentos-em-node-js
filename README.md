@@ -3,4 +3,4 @@
 
 Nesse repositório contém meu aprendizado em node.js, desde da construção da arquitetura MVC, instalaçao de módulos externos, construção de um servidor com os módulos nativos do node 
 ou utilizando o framework Express. Também a criação e consumo externo de APIs, teste de rotas com verbos HTTP, integração com banco de dados relacionais 
-e não relacionais, integração com o front-end, utilizando handlebars
+e não relacionais utilizando ORMs, integração com o front-end, utilizando handlebars.
