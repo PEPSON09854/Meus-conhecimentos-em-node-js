@@ -18,15 +18,15 @@ Antes de começar, você precisará ter o Node.js instalado em sua máquina. Voc
 
 ### Criando um novo projeto
 
-1 - Crie uma nova pasta para o seu projeto.
-2 - Abra o terminal e navegue até a pasta do projeto.
-3 - Execute o comando ```npm init``` para inicializar o projeto e criar um arquivo package.json.
-4 - Preencha as informações solicitadas, como nome do projeto, descrição, autor, etc.
+1. Crie uma nova pasta para o seu projeto.
+2. Abra o terminal e navegue até a pasta do projeto.
+3. Execute o comando ```npm init``` para inicializar o projeto e criar um arquivo package.json.
+4. Preencha as informações solicitadas, como nome do projeto, descrição, autor, etc.
 
 ### Executando o projeto
 
-1 - Crie um arquivo chamado index.js na pasta do projeto.
-2 - Adicione o seguinte código ao arquivo ```index.js```
+1. Crie um arquivo chamado index.js na pasta do projeto.
+2. Adicione o seguinte código ao arquivo ```index.js```
     
 ```
 const http = require('http');
@@ -46,8 +46,8 @@ server.listen(port, hostname, () => {
 
 ```  
 
-1 - Execute o comando ```node index.js ``` no terminal para iniciar o servidor.
-2 - Abra o seu navegador e acesse http://localhost:3000 para ver a saída "Hello World".
+1. Execute o comando ```node index.js ``` no terminal para iniciar o servidor.
+2. Abra o seu navegador e acesse http://localhost:3000 para ver a saída "Hello World".
 
 ## Gerenciando pacotes
 
