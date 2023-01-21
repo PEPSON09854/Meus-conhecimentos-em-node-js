@@ -447,6 +447,56 @@ Handlebars é uma ferramenta muito útil para desenvolvedores web, pois permite 
 
 Para saber mais sobre Handlebars visite a documentação em https://handlebars.com
 
+## Arquitetura MVC em Node.js
+
+MVC, ou Model-View-Controller, é uma arquitetura de software comum para desenvolvimento de aplicativos web. Ele divide a lógica do aplicativo em três camadas distintas: model, view e controller.
+
+### Model
+
+A camada de modelo é responsável por gerenciar os dados e a lógica de negócios do aplicativo. Ela pode se comunicar diretamente com o banco de dados e fornecer dados para a camada de visualização.
+
+### View
+
+A camada de visualização é responsável por exibir os dados para o usuário. Ela pode usar templates ou frameworks de renderização para exibir dados dinamicamente.
+
+### Controller
+
+A camada de controller é responsável por gerenciar as solicitações do usuário e comunicar-se com as camadas de modelo e visualização. Ele pode interpretar as solicitações do usuário, obter dados do modelo e passá-los para a visualização.
+
+### Implementação
+
+````
+myapp/
+├── controllers/
+│   ├── usersController.js
+├── models/
+│   ├── users.js
+├── views/
+│   ├── users/
+│   │   ├── index.hbs
+│   │   ├── show.hbs
+├── app.js
+├── package.json
+├── routes.js
+└── README.md
+````
+
+    . controllers/: Contém os arquivos dos controladores, cada um responsável por lidar com as solicitações para uma determinada rota.
+    . models/: Contém os arquivos de modelos, cada um representando uma tabela no banco de dados e definindo os campos e tipos de dados.
+    . views/: Contém os arquivos de visualização, que são templates de HTML que são preenchidos com dados dinâmicos e enviados ao navegador.
+    . app.js: Contém a configuração do aplicativo e as configurações do servidor.
+    . package.json: Contém informações sobre o aplicativo e suas dependências.
+    . routes.js: Contém as rotas do aplicativo e as configurações de roteamento.
+    . README.md: Contém informações sobre o projeto.
+
+
+Existem várias maneiras de implementar a arquitetura MVC em Node.js. Alguns frameworks, como o Express.js, já incluem suporte para MVC e fornecem estruturas de pastas pré-definidas para cada camada. Outros frameworks, como o Sails.js, fornecem um conjunto completo de recursos MVC.
+
+Além disso, é possível implementar MVC manualmente usando bibliotecas e ferramentas independentes, como Sequelize para a camada de modelo, Handlebars para a camada de visualização e um roteador de rotas para a camada de controller.
+
+De qualquer forma, a implementação de MVC em Node.js permite a separação clara da lógica do aplicativo e melhora a manutenibilidade e escalabilidade do código.
+
+
 
 
 
