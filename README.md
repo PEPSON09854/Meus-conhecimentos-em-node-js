@@ -14,7 +14,7 @@ Node.js é uma plataforma JavaScript de código aberto que permite aos desenvolv
 
 ### Pré-requisitos
 
-Antes de começar, você precisará ter o Node.js instalado em sua máquina. Você pode baixar e instalar a última versão do Node.js no site oficial nodejs.org.
+Antes de começar, você precisará ter o Node.js instalado em sua máquina. Você pode baixar e instalar a última versão do Node.js no site oficial https://nodejs.org.
 Criando um novo projeto
 
 1 - Crie uma nova pasta para o seu projeto.
