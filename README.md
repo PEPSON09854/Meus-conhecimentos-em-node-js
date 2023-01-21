@@ -4,7 +4,7 @@
 
 Nesse repositório contém meu aprendizado em Node.js. 
 
-Desde da inicialização do projeto com ```npm init``` e construção da arquitetura MVC, instalaçao de módulos externos, construção de um servidor com os módulos nativos do node ou utilizando o framework Express. Também a criação de APIs e integração externas, teste de validações das rotas HTTP, integração com banco de dados relacionais e não relacionais utilizando ORMs ou ODM, utilização de templates engines como EJS e Handlebars para aplicação web completa.
+Desde da inicialização do projeto com ```npm init``` e construção da arquitetura MVC, instalaçao de módulos externos, construção de um servidor com os módulos nativos do node ou utilizando o framework Express. Também a criação de APIs e integração externas, teste de validações das rotas HTTP, integração com banco de dados relacionais e não relacionais utilizando ORM ou ODM, utilização de templates engines como EJS e Handlebars para aplicação web completa.
 
 ## <img aling='center' alt= 'NODE JS' src='https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white'/>
 
