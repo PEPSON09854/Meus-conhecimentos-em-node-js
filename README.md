@@ -163,3 +163,73 @@ eventEmitter.emit('customEvent', 'Hello World');
 
 ```
 Com a grande variedade de módulos nativos disponíveis, os desenvolvedores podem facilmente construir aplicativos web ricos e funcionais sem precisar de bibliotecas externas.
+
+## Rotas em Node.js
+
+As rotas são uma parte importante de qualquer aplicação web, pois permitem que os usuários acessem diferentes páginas e recursos do seu aplicativo. No Node.js, as rotas são geralmente gerenciadas usando uma biblioteca ou framework de roteamento.
+
+# <img aling='center' alt= 'EXPRESS' src='https://img.shields.io/badge/Express.js-404D59?style=for-the-badge'/>
+
+O Express.js é uma das bibliotecas de roteamento mais populares no Node.js. Ele fornece uma interface simples e fácil de usar para gerenciar rotas. Para começar a usar o Express.js, primeiro você deve instalá-lo usando o npm:
+
+```npm install express```
+
+Em seguida, você pode importar o Express em seu arquivo de inicialização e configurar as rotas:
+
+```
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Olá Mundo!');
+});
+
+app.get('/about', (req, res) => {
+    res.send('Sobre nós');
+});
+
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta http://localhost:3000');
+});
+
+```
+
+Neste exemplo, estamos configurando duas rotas: a raiz (/) e a rota "/about". Quando o usuário acessa cada rota, a função callback correspondente é chamada e uma resposta "Olá Mundo!" ou "Sobre nós" é enviada de volta ao navegador.
+
+Além das rotas ```"GET"``` você pode usar também rotas ```"POST", "PUT" e "DELETE"```, basta mudar o método "get" para o método desejado.
+
+### Utilizando o Router do próprio Node.js
+
+O Node.js também fornece uma classe de roteamento embutida chamada Router. Essa classe pode ser usada para gerenciar rotas sem precisar de uma biblioteca externa. 
+
+### Exemplo de como usar o Router do Node.js:
+
+```
+const http = require('http');
+const url = require('url');
+const router = new Map();
+
+router.set('/', (req, res) => {
+    res.end('Hello World');
+});
+
+router.set('/about', (req, res) => {
+    res.end('About Us');
+});
+
+const server = http.createServer((req, res) => {
+    const pathname = url.parse(req.url).pathname;
+    const handler = router.get(pathname);
+    if (handler) {
+        handler(req, res);
+    } else {
+        res.statusCode = 404;
+        res.end('404 Not Found');
+    }
+});
+
+server.listen(3000,
+
+```
+
+
