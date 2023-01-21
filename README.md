@@ -168,35 +168,6 @@ Com a grande variedade de módulos nativos disponíveis, os desenvolvedores pode
 
 As rotas são uma parte importante de qualquer aplicação web, pois permitem que os usuários acessem diferentes páginas e recursos do seu aplicativo. No Node.js, as rotas são geralmente gerenciadas usando uma biblioteca ou framework de roteamento.
 
-### <img aling='center' alt= 'EXPRESS' src='https://img.shields.io/badge/Express.js-404D59?style=for-the-badge'/>
-
-O Express.js é uma das bibliotecas de roteamento mais populares no Node.js. Ele fornece uma interface simples e fácil de usar para gerenciar rotas. Para começar a usar o Express.js, primeiro você deve instalá-lo usando o npm:
-
-```npm install express```
-
-Em seguida, você pode importar o Express em seu arquivo de inicialização e configurar as rotas:
-
-```
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send('Olá Mundo!');
-});
-
-app.get('/about', (req, res) => {
-    res.send('Sobre nós');
-});
-
-app.listen(3000, () => {
-    console.log('Servidor rodando na porta http://localhost:3000');
-});
-
-```
-
-Neste exemplo, estamos configurando duas rotas: a raiz (/) e a rota "/about". Quando o usuário acessa cada rota, a função callback correspondente é chamada e uma resposta "Olá Mundo!" ou "Sobre nós" é enviada de volta ao navegador.
-
-Além das rotas ```"GET"``` você pode usar também rotas ```"POST", "PUT" e "DELETE"```, basta mudar o método "get" para o método desejado.
 
 ### Utilizando o Router do próprio Node.js
 
@@ -231,5 +202,109 @@ const server = http.createServer((req, res) => {
 server.listen(3000,
 
 ```
+
+O exemplo de código mostra como usar a classe Router embutida do Node.js para gerenciar rotas. Ele importa as bibliotecas necessárias para criar um servidor e trabalhar com URLs, cria uma instância de Map chamada router, adiciona duas rotas à nossa instância de Map, cria um servidor e espera por requisições. As rotas e suas respectivas funções de callback são adicionadas ao objeto Map para serem chamadas quando uma rota correspondente é acessada.
+
+## <img aling='center' alt= 'EXPRESS' src='https://img.shields.io/badge/Express.js-404D59?style=for-the-badge'/>
+
+Express é um framework web para Node.js que facilita a criação de aplicativos web e APIs. Ele fornece uma série de recursos para lidar com rotas, middleware e outras necessidades comuns em aplicativos web.
+Instalação
+
+Para instalar o Express, você precisa ter o Node.js instalado. Em seguida, você pode instalar o Express usando o gerenciador de pacotes npm:
+
+``` npm install express ```
+
+### Como usar
+
+Aqui está um exemplo simples de como criar um servidor HTTP usando o Express:
+
+```
+ const express = require('express');
+ const app = express();
+
+ app.get('/', (req, res) => {
+    res.send('Hello World!');
+ });
+
+ app.listen(3000, () => {
+    console.log('Server running on http://localhost:3000');
+ });
+ 
+```  
+   
+Neste exemplo, estamos importando o Express usando o require(), criando uma nova instância do aplicativo Express e definindo uma rota para a raiz ('/') que responde com "Hello World!". Em seguida, estamos fazendo o servidor ouvir a porta 3000.
+
+### Rotas
+
+O Express oferece suporte a vários métodos HTTP, como ```get(), post(), put() e delete()```,que permitem definir rotas para lidar com requisições HTTP correspondentes.
+
+### Middleware
+
+O Express também oferece suporte a middleware, que é um conjunto de funções que podem ser executadas antes de uma rota ser chamada. Isso permite que você execute tarefas comuns, como autenticação e validação de dados, antes de lidar com a rota específica.
+
+Para obter mais informações e recursos, consulte a documentação oficial em https://expressjs.com
+
+
+# <img aling='center' alt= 'MONGODB' src='https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white'/>
+
+Mongoose é uma biblioteca para Node.js que fornece uma maneira fácil de trabalhar com a base de dados MongoDB. Ele fornece uma camada de abstração sobre a API do MongoDB, permitindo que você crie esquemas para seus dados e execute operações de CRUD (criar, ler, atualizar e excluir) de forma simplificada.
+
+### Instalação
+
+Para instalar o Mongoose, você precisará ter o Node.js e o MongoDB instalados. Em seguida, você pode instalar o Mongoose usando o gerenciador de pacotes npm:
+
+```npm install mongoose```
+
+### Uso básico
+
+Aqui está um exemplo simples de como se conectar a um banco de dados MongoDB e criar um esquema de usuário:
+
+```
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost/mydb', { useNewUrlParser: true });
+
+const userSchema = new mongoose.Schema({
+  name: String,
+  age: Number
+});
+
+const User = mongoose.model('User', userSchema);
+
+```
+
+Neste exemplo, estamos importando o Mongoose usando o require() e usando o método connect() para se conectar ao banco de dados mydb em mongodb://localhost. Em seguida, estamos criando um esquema de usuário com os campos name e age e criando um modelo de usuário a partir desse esquema.
+Operações de CRUD
+
+Uma vez que você tenha criado um modelo, você pode executar operações de CRUD com ele. Aqui estão alguns exemplos:
+
+```
+// Create
+const user = new User({ name: 'John', age: 30 });
+user.save();
+
+// Read
+User.find({ name: 'John' }, (err, users) => {
+  console.log(users);
+});
+
+// Update
+User.updateOne({ name: 'John' }, { age: 31 }, (err) => {
+  if (!err) {
+    console.log('Success');
+  }
+});
+
+// Delete
+User.deleteOne({ name: 'John' }, (err) => {
+  if (!err) {
+    console.log('Success');
+  }
+});
+
+```
+Para obter mais informações e recursos, consulte a documentação oficial https://mongoosejs.com
+
+
 
 
