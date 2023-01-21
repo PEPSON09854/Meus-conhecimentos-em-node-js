@@ -374,6 +374,80 @@ User.destroy({
 
 O Sequelize é uma ferramenta poderosa para trabalhar com bancos de dados relacionais no Node.js. Ele permite que os desenvolvedores trabalhem com dados usando uma API baseada em JavaScript, tornando mais fácil e intuitivo trabalhar com bancos de dados. Além disso, ele fornece uma ampla variedade de recursos, como suporte a transações, relacionamentos entre tabelas e validação de dados, que tornam mais fácil construir aplicativos robustos e escaláveis. Ao usar o Sequelize, os desenvolvedores podem se concentrar mais no desenvolvimento do aplicativo em si, em vez de se preocupar com os detalhes de como trabalhar com o banco de dados.
 
+Para mais informações visite a documentação em https://sequelize.org
+
+## Handlebars
+
+Handlebars é um motor de template para JavaScript que ajuda a tornar o desenvolvimento de aplicativos web mais fácil e rápido. Ele permite que os desenvolvedores criem templates de HTML reutilizáveis e os preencham com dados dinâmicos. Isso significa que, em vez de escrever código HTML repetitivo, os desenvolvedores podem usar Handlebars para definir seções de HTML que podem ser preenchidas com diferentes conjuntos de dados.
+Instalação
+
+Para começar a usar o Handlebars, você precisará instalá-lo usando o npm:
+
+```npm install handlebars```
+
+### Definição de templates
+
+Depois de instalado, você pode criar templates de HTML usando a sintaxe de Handlebars. A sintaxe de Handlebars permite que você use variáveis, loops e condicionais dentro de suas templates. Aqui está um exemplo de um template de Handlebars:
+
+````
+<div>
+    <h1>{{title}}</h1>
+    <ul>
+    {{#each items}}
+        <li>{{this}}</li>
+    {{/each}}
+    </ul>
+</div>
+````
+
+### Compilação
+
+Depois de criar seus templates, você precisará compilá-los usando o Handlebars. Isso pode ser feito usando a função compile do Handlebars. Aqui está um exemplo de como fazer isso:
+````
+const Handlebars = require('handlebars');
+const template = Handlebars.compile(`
+    <div>
+        <h1>{{title}}</h1>
+        <ul>
+        {{#each items}}
+            <li>{{this}}</li>
+        {{/each}}
+        </ul>
+    </div>
+`);
+````
+
+### Renderização
+
+Depois de compilar um template, você pode usá-lo para renderizar dados. Isso é feito usando a função template() e passando os dados como um objeto.  
+
+### Exemplo de como isso pode ser feito:
+
+````
+const data = {
+    title: 'My List',
+    items: ['item 1', 'item 2', 'item 3']
+};
+const html = template(data);
+console.log(html);
+
+Este exemplo irá imprimir:
+
+<div>
+    <h1>My List</h1>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+</div>
+````
+
+Handlebars é uma ferramenta muito útil para desenvolvedores web, pois permite criar templates de HTML reutilizáveis e os preencher com dados dinâmicos. Isso ajuda a tornar o desenvolvimento de aplicativos web mais fácil e rápido, além de aumentar a manutenibilidade do código. Ao usar Handlebars, os desenvolvedores podem se concentrar mais no desenvolvimento do aplicativo em si, em vez de se preocupar com a escrita de código HTML repetitivo.
+
+Para saber mais sobre Handlebars visite a documentação em https://handlebars.com
+
+
 
 
 
