@@ -168,7 +168,7 @@ Com a grande variedade de módulos nativos disponíveis, os desenvolvedores pode
 
 As rotas são uma parte importante de qualquer aplicação web, pois permitem que os usuários acessem diferentes páginas e recursos do seu aplicativo. No Node.js, as rotas são geralmente gerenciadas usando uma biblioteca ou framework de roteamento.
 
-<img aling='center' alt= 'EXPRESS' src='https://img.shields.io/badge/Express.js-404D59?style=for-the-badge'/>
+### <img aling='center' alt= 'EXPRESS' src='https://img.shields.io/badge/Express.js-404D59?style=for-the-badge'/>
 
 O Express.js é uma das bibliotecas de roteamento mais populares no Node.js. Ele fornece uma interface simples e fácil de usar para gerenciar rotas. Para começar a usar o Express.js, primeiro você deve instalá-lo usando o npm:
 
