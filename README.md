@@ -305,6 +305,76 @@ User.deleteOne({ name: 'John' }, (err) => {
 ```
 Para obter mais informações e recursos, consulte a documentação oficial https://mongoosejs.com
 
+## <img src='https://img.shields.io/badge/sequelize-323330?style=for-the-badge&logo=sequelize&logoColor=blue'/>
+
+Sequelize é uma biblioteca de mapeamento de objeto-relacional (ORM) para Node.js. Ele permite que os desenvolvedores trabalhem com bancos de dados relacionais, como MySQL, PostgreSQL e SQLite, usando uma API baseada em JavaScript. Isso significa que, em vez de escrever consultas SQL diretamente, os desenvolvedores podem trabalhar com dados usando objetos JavaScript.
+Instalação
+
+Para começar a usar o Sequelize, você precisará instalá-lo usando o npm:
+
+```npm install sequelize```
+
+### Configuração
+
+Depois de instalado, você precisará configurar sua conexão com o banco de dados. Isso inclui informações como o nome do banco de dados, o nome de usuário e a senha. Aqui está um exemplo de como fazer isso usando SQLite:
+
+````
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('database', 'username', 'password', {
+    host: 'localhost',
+    dialect: 'sqlite',
+    storage: 'path/to/database.sqlite'
+});
+
+````
+
+### Definição de modelos
+
+Depois de configurar a conexão com o banco de dados, você pode começar a definir modelos. Um modelo representa uma tabela no banco de dados e define os campos e tipos de dados que a tabela deve conter. Aqui está um exemplo de como definir um modelo de usuário:
+
+````
+const User = sequelize.define('user', {
+    name: {
+        type: Sequelize.STRING
+    },
+    email: {
+        type: Sequelize.STRING
+    }
+});
+````
+
+### Operações de banco de dados
+
+Depois de definir seus modelos, você pode usar o Sequelize para realizar operações de banco de dados, como criar, ler, atualizar e excluir dados. Aqui estão alguns exemplos de como fazer isso:
+
+```
+// Criar um novo usuário
+User.create({
+    name: 'John Doe',
+    email: 'johndoe@example.com'
+});
+
+// Buscar todos os usuários
+User.findAll().then((users) => {
+    console.log(users);
+});
+
+// Atualizar um usuário
+User.update({
+    name: 'Jane Doe'
+}, {
+    where: { id: 1 }
+});
+
+// Excluir um usuário
+User.destroy({
+    where: { id: 1 }
+});
+```
+
+O Sequelize é uma ferramenta poderosa para trabalhar com bancos de dados relacionais no Node.js. Ele permite que os desenvolvedores trabalhem com dados usando uma API baseada em JavaScript, tornando mais fácil e intuitivo trabalhar com bancos de dados. Além disso, ele fornece uma ampla variedade de recursos, como suporte a transações, relacionamentos entre tabelas e validação de dados, que tornam mais fácil construir aplicativos robustos e escaláveis. Ao usar o Sequelize, os desenvolvedores podem se concentrar mais no desenvolvimento do aplicativo em si, em vez de se preocupar com os detalhes de como trabalhar com o banco de dados.
+
+
 
 
 
