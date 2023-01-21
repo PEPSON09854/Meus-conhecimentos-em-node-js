@@ -479,15 +479,16 @@ myapp/
 ├── package.json
 ├── routes.js
 └── README.md
+
 ````
 
-    . controllers/: Contém os arquivos dos controladores, cada um responsável por lidar com as solicitações para uma determinada rota.
-    . models/: Contém os arquivos de modelos, cada um representando uma tabela no banco de dados e definindo os campos e tipos de dados.
-    . views/: Contém os arquivos de visualização, que são templates de HTML que são preenchidos com dados dinâmicos e enviados ao navegador.
-    . app.js: Contém a configuração do aplicativo e as configurações do servidor.
-    . package.json: Contém informações sobre o aplicativo e suas dependências.
-    . routes.js: Contém as rotas do aplicativo e as configurações de roteamento.
-    . README.md: Contém informações sobre o projeto.
+   controllers/: Contém os arquivos dos controladores, cada um responsável por lidar com as solicitações para uma determinada rota.
+   models/: Contém os arquivos de modelos, cada um representando uma tabela no banco de dados e definindo os campos e tipos de dados.
+   views/: Contém os arquivos de visualização, que são templates de HTML que são preenchidos com dados dinâmicos e enviados ao navegador.
+   app.js/: Contém a configuração do aplicativo e as configurações do servidor.
+   package.json/: Contém informações sobre o aplicativo e suas dependências.
+   routes.js/: Contém as rotas do aplicativo e as configurações de roteamento.
+   README.md/: Contém informações sobre o projeto.
 
 
 Existem várias maneiras de implementar a arquitetura MVC em Node.js. Alguns frameworks, como o Express.js, já incluem suporte para MVC e fornecem estruturas de pastas pré-definidas para cada camada. Outros frameworks, como o Sails.js, fornecem um conjunto completo de recursos MVC.
