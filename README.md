@@ -49,7 +49,7 @@ server.listen(port, hostname, () => {
 1. Execute o comando ```node index.js ``` no terminal para iniciar o servidor.
 2. Abra o seu navegador e acesse http://localhost:3000 para ver a saída "Hello World".
 
-## Gerenciando pacotes
+### Gerenciando pacotes
 
 Node.js vem com o gerenciador de pacotes ```npm``` , que permite instalar e gerenciar pacotes adicionais para o seu projeto. Para instalar um pacote, use o comando npm install nome_do_pacote. Por exemplo, para instalar o pacote express, use o comando ```npm install express```.
 
@@ -57,11 +57,11 @@ Node.js vem com o gerenciador de pacotes ```npm``` , que permite instalar e gere
 
 Node.js fornece uma série de módulos nativos para ajudar os desenvolvedores a construir aplicativos web escaláveis e de alta performance. Vou apresentar alguns dos módulos nativos mais comuns do Node.js.
 
-## HTTP
+### HTTP
 
 O módulo ```http``` fornece uma API para criar servidores e clientes HTTP. Ele permite aos desenvolvedores criar servidores web simples e gerenciar as solicitações e respostas HTTP.
 
-## File System
+### File System
 
 O módulo fs fornece uma API para lidar com arquivos e pastas no sistema de arquivos do sistema. Ele permite aos desenvolvedores ler, escrever e gerenciar arquivos e pastas.
 
@@ -76,7 +76,7 @@ fs.readFile('file.txt', 'utf8', (err, data) => {
 
 ```
 
-## Crypto
+### Crypto
 
 O módulo ```crypto``` fornece uma variedade de algoritmos de criptografia para proteger informações confidenciais. Ele permite aos desenvolvedores criar e verificar assinaturas digitais, cifrar e decifrar dados e gerar números aleatórios seguros.
 
@@ -90,7 +90,7 @@ const hash = crypto.createHmac('sha256', secret)
                    .digest('hex');
 console.log(hash);
 ```
-## Stream
+### Stream
 
 O módulo ```stream``` fornece uma API para lidar com fluxos de dados. Ele permite aos desenvolvedores manipular dados de forma eficiente e escalável, como lidar com grandes arquivos ou dados de rede.
 
@@ -108,7 +108,7 @@ stream.on('end', () => {
 
 ```
 
-## Path
+### Path
 
 O módulo ```path``` fornece uma API para lidar com caminhos de arquivos e pastas. Ele permite aos desenvolvedores trabalhar com caminhos de arquivos e pastas de forma portável em diferentes sistemas operacionais.
 
@@ -121,7 +121,7 @@ console.log(filePath);
 
 ```
 
-## URL
+### URL
 
 O módulo ```url``` fornece uma API para lidar com URLs. Ele permite aos desenvolvedores analisar e construir URLs de forma fácil e consistente.
 
@@ -134,7 +134,7 @@ console.log(myUrl);
 
 ```
 
-## Query Strings
+### Query Strings
 
 O módulo ```querystring``` fornece uma API para lidar com strings de consulta. Ele permite aos desenvolvedores analisar e construir strings de consulta de forma fácil e consistente.
 
@@ -147,7 +147,7 @@ console.log(myQuery);
 
 ```
 
-## Eventos
+### Eventos
 
 O módulo ```events``` fornece uma API de gerenciamento de eventos. Ele permite aos desenvolvedores criar e gerenciar eventos personalizados, o que é útil para aplicativos de tempo real e outros tipos de aplicativos assíncronos.
 
