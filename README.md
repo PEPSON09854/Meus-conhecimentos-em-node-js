@@ -10,6 +10,8 @@ Desde da inicialização do projeto com ```npm init``` e construção da arquite
 
 API de autenticação de usuários https://github.com/PEPSON09854/construindo-uma-api-rest-de-autenticacao-de-usuarios.git
 
+##
+
 ## <img aling='center' alt= 'NODE JS' src='https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white'/>
 
 ### Inicializando um projeto Node.js
