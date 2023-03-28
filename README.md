@@ -1,9 +1,6 @@
 # Meus conhecimentos em node.js 🎓
 
-### 
-<div>
-   Links dos meus projetos <img aling='center' alt= 'NODE JS' src='https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&                logoColor=white'/>
-</div>
+### Links dos meus projetos Node:
 
  projeto API Rest de autenticação de usuários: https://github.com/PEPSON09854/construindo-uma-api-rest-de-autenticacao-de-usuarios.git
  
@@ -14,6 +11,8 @@
 ##
 
 ### Introdução
+
+<img aling='center' alt= 'NODE JS' src='https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white'/>
 
 Nesse repositório contém meu aprendizado em Node.js. 
 
