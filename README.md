@@ -10,7 +10,7 @@ Desde da inicialização do projeto com ```npm init``` e construção da arquite
 
  projeto API de autenticação de usuários https://github.com/PEPSON09854/construindo-uma-api-rest-de-autenticacao-de-usuarios.git
  
- projeto API Rest Full de rede social: https://github.com/PEPSON09854/Construindo-um-backend-com-node-js-e-express.git
+ projeto API Rest Full para rede social: https://github.com/PEPSON09854/Construindo-um-backend-com-node-js-e-express.git
  
 ##
 
