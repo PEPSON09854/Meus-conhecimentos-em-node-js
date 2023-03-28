@@ -12,7 +12,7 @@ API de autenticação de usuários https://github.com/PEPSON09854/construindo-um
 
 ##
 
-## <img aling='center' alt= 'NODE JS' src='https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white'/>
+### <img aling='center' alt= 'NODE JS' src='https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white'/>
 
 ### Inicializando um projeto Node.js
 
