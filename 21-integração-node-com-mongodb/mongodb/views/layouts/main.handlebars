@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js integrado ao Mongodb</title>
+</head>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Helvetica;
+    overflow-x: hidden;
+    outline: none;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #404757;
+    
+}
+
+.nav-bar h1{
+    font-size: 40px;
+    margin-left: 30px;
+    color: #f0f8ff;
+}
+
+.nav-bar ul{
+    margin-right: 80px;
+    display: flex;
+}
+
+.nav-bar ul li{
+    
+    margin-left: 35px;
+    font-size: 25px;
+    list-style: none;
+}
+
+.nav-bar a{
+    color: #f0f8ff;
+}
+
+.form{
+    display: flex;
+    width: 40vw;
+    height: auto;
+    background-color: #404757;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 6pt;
+}
+
+.box{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.box label{
+    margin-top: -70px;
+    position: absolute;
+   
+}
+
+.box input{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6pt;
+}
+
+.form textarea{
+    width: 100%;
+
+}
+.form .btn{
+    width: 50%;
+    height: 40px;
+    background-color: #5f9ea0;
+    border: none;
+    color: #f0f8ff;
+    
+}
+
+.footer{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    background-color: #404757;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+
+
+<body>
+    <nav class="nav-bar">
+        <h1>Logo</h1>
+        <ul>
+            <li><a href="/products">Produtos</a></li>
+            <li><a href="/products/create">Criar produtos</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+         {{{body}}}
+    </div>
+    <footer class="footer">
+        <p>Desenvolvido por <span>Pepson Anderson &copy; 2022</span></p>
+    </footer>
+</body>
+</html>
